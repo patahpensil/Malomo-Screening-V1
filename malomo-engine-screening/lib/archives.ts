@@ -1,0 +1,16 @@
+import btc from '../public/data/BTCUSDT.json';
+import eth from '../public/data/ETHUSDT.json';
+import sol from '../public/data/SOLUSDT.json';
+import bnb from '../public/data/BNBUSDT.json';
+import xrp from '../public/data/XRPUSDT.json';
+import doge from '../public/data/DOGEUSDT.json';
+import rbtc from '../public/data/replay-BTCUSDT.json';
+import reth from '../public/data/replay-ETHUSDT.json';
+import rsol from '../public/data/replay-SOLUSDT.json';
+import rbnb from '../public/data/replay-BNBUSDT.json';
+import rxrp from '../public/data/replay-XRPUSDT.json';
+import rdoge from '../public/data/replay-DOGEUSDT.json';
+import type {Candle} from '../core/market.ts';
+export type Packet={symbol:string;one:Candle[];four:Candle[];day:Candle[];mode:string;asOf:number;future?:Candle[]};
+export const archives:Record<string,Packet>={BTCUSDT:btc,ETHUSDT:eth,SOLUSDT:sol,BNBUSDT:bnb,XRPUSDT:xrp,DOGEUSDT:doge};
+export const replays:Record<string,Packet>={BTCUSDT:rbtc,ETHUSDT:reth,SOLUSDT:rsol,BNBUSDT:rbnb,XRPUSDT:rxrp,DOGEUSDT:rdoge};

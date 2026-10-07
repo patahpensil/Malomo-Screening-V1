@@ -318,7 +318,7 @@ When a new ChatGPT session starts inside this project:
 
 ---
 
-## 12. Current Next Step
+## 12. Original Next Step (superseded by research release below)
 
 The architecture is established, but formulas and parameters are intentionally not finalized.
 
@@ -327,3 +327,30 @@ Next development should proceed module-by-module, beginning with objective defin
 ---
 
 **Last context baseline:** 2026-10-07
+
+
+## 13. Research application release — 2026-10-07
+
+The user subsequently authorized autonomous point-by-point testing, PRD implementation, commit/push and deployment. Implementation resides only in `malomo-engine-screening/` in this repository. Never modify `Malomo-Quantitative-Trading`.
+
+The candidate `malomo-research-1.0.0` implements an inspectable structural 1D/4H/1H hypothesis and paper simulation controls. These parameters are experimental, not finalized trading rules. Tested calculation contracts are documented in `malomo-engine-screening/docs/PRD.md`; validation evidence is in `malomo-engine-screening/docs/VALIDATION.md`.
+
+Actual official archive research: 6 pairs, 91,872 hourly candles, January 2025 through September 2026; 71 closed trades, PF 0.9303, OOS PF 0.9761, holdout PF 0.9706 on 30 trades. Verdict **NOT_VALIDATED**. Funding omitted; fixed-universe bias unresolved; no portfolio-return claim. No optimization after seeing this outcome. The consumed holdout cannot be reused as fresh evidence.
+
+The application supports scanner, chart/states, watchlist, risk review, paper lifecycle, journal/notes, research replay and exact backtest reproduction. Owner-private persistence uses D1. Live Binance REST availability is conditional: normal official access failed in the test environment; archived data remains explicitly historical. WebSocket ticker connection was observed. There are no real-money order endpoints.
+
+Next work should preserve this honest baseline and use a new protocol/fresh holdout for strategy changes. Expand formula families only with independent evidence. Mobile visual QA and successful live REST operation remain explicitly unverified; neither is represented as a passed check. Reuse the existing Site project recorded in `malomo-engine-screening/.openai/hosting.json` for publication or edits.
+
+
+## Deployment checkpoint — 8 October 2026 (WITA)
+
+- Application source: `malomo-engine-screening/`.
+- Live URL: https://malomo-screening-v1.bunyaxter.chatgpt.site
+- Hosted source checkpoint: `18637f6efb4f949f945b3fcc169b943529e7c0ae`.
+- Deployment succeeded; current access is owner-private.
+- Mobile installation: manifest, icons, standalone display and installation guide.
+- Live scan repair: UTF-8 and one-character symbols supported; failures isolated per pair/batch; charts populate during scan.
+- Validation: production build, TypeScript and 27 Worker/D1 API integration checks passed.
+- Strategy remains research/paper only: historical baseline 71 trades, profit factor approximately 0.93; profitability not validated.
+- Live market requests originate in the user's browser; scan requires the application to remain active.
+- See `malomo-engine-screening/docs/LIVE_SCAN_FIX_2026-10-08.md` for diagnosis and regression evidence.

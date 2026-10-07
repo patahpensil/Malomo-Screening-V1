@@ -1,0 +1,29 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> malomo-screening-v1@0.1.0 test
+> node --experimental-strip-types --test research/module-tests.ts research/causality-tests.ts
+
+✔ CAUSALITY: closed trades before a cut are identical without later candles (892.881406ms)
+✔ REPLAY: all six archived setups reproduce using only their historical prefix (113.629286ms)
+✔ DATA: excludes unclosed bars and rejects gaps, duplicates, malformed OHLC (1.160713ms)
+✔ DATA: aggregation never creates incomplete 4H/1D bars (0.459797ms)
+✔ SCANNER: eligible USDT perpetual only, numeric volume ranking and deterministic ties (8.342527ms)
+✔ STRUCTURE: a fractal becomes visible only after two right bars close (0.265363ms)
+✔ DECISION: quality dimensions do not veto a valid structural trigger (0.222897ms)
+✔ TRIGGER: setup close is not entry, expired setup and invalidation fail (1.83412ms)
+✔ DIRECTION: conflicting timeframe cannot produce a plan (0.219376ms)
+✔ SYMMETRY: mirrored long/short data produces mirrored plans (0.352997ms)
+✔ QUALITY: volatility labels do not use a directional vote (0.398084ms)
+✔ RISK: kill switch, portfolio limit and non-finite inputs reject; sizing is capped (0.44881ms)
+✔ BACKTEST: ambiguous same-bar stop/target uses stop; adverse gaps use open (0.206173ms)
+✔ RESEARCH: empty sample never reports profitability; bootstrap reproducible (0.309532ms)
+✔ PAPER: next-open fill, tracking idempotency and terminal target (0.433458ms)
+✔ PAPER: gaps freeze tracking and a gap through stop invalidates waiting entry (0.183526ms)
+ℹ tests 16
+ℹ suites 0
+ℹ pass 16
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1147.960893

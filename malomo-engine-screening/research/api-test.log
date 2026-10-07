@@ -1,0 +1,113 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> malomo-screening-v1@0.1.0 test:api
+> node --import ./scripts/sites-env.mjs research/api-tests.mjs
+
+PASS 1 clean database migration and defaults
+PASS 2 foreign origin rejected
+workspace_post e [ZodError]
+    at get error (file:///workspace/sites/malomo-screening-v1/malomo-engine-screening/dist/server/_next/static/route-cJvYPjnn.js:1:3197627)
+    at q.parse (file:///workspace/sites/malomo-screening-v1/malomo-engine-screening/dist/server/_next/static/route-cJvYPjnn.js:1:3198829)
+    at Object.kt [as handlerFn] (file:///workspace/sites/malomo-screening-v1/malomo-engine-screening/dist/server/_next/static/route-cJvYPjnn.js:1:3248262)
+    at async Q (file:///workspace/sites/malomo-screening-v1/malomo-engine-screening/dist/server/_next/static/app-route-handler-dispatch-B_OEuLk5.js:1:18260)
+    at async ot (file:///workspace/sites/malomo-screening-v1/malomo-engine-screening/dist/server/_next/static/app-route-handler-dispatch-B_OEuLk5.js:1:18546)
+    at async So.route (file:///workspace/sites/malomo-screening-v1/malomo-engine-screening/dist/server/index.js:2:26374)
+    at async t (file:///workspace/sites/malomo-screening-v1/malomo-engine-screening/dist/server/index.js:2:26583)
+    at async bm (file:///workspace/sites/malomo-screening-v1/malomo-engine-screening/dist/server/index.js:14:138589) {
+  issues: [
+    {
+      code: 'too_big',
+      maximum: 1,
+      type: 'number',
+      inclusive: true,
+      exact: false,
+      message: 'Number must be less than or equal to 1',
+      path: [Array]
+    },
+    {
+      code: 'custom',
+      message: 'Risiko per posisi melebihi batas portfolio.',
+      path: []
+    }
+  ],
+  addIssue: [Function (anonymous)],
+  addIssues: [Function (anonymous)],
+  errors: [
+    {
+      code: 'too_big',
+      maximum: 1,
+      type: 'number',
+      inclusive: true,
+      exact: false,
+      message: 'Number must be less than or equal to 1',
+      path: [Array]
+    },
+    {
+      code: 'custom',
+      message: 'Risiko per posisi melebihi batas portfolio.',
+      path: []
+    }
+  ]
+}
+PASS 3 invalid risk rejected
+PASS 4 watchlist persists
+PASS 5 watchlist removal persists
+PASS 6 all six archive decisions execute
+PASS 7 repeated same-candle scans are idempotent
+PASS 8 journal note persists
+PASS 9 canonical replay is a valid structural signal
+workspace_post Error: KILL_SWITCH
+    at Object.kt [as handlerFn] (file:///workspace/sites/malomo-screening-v1/malomo-engine-screening/dist/server/_next/static/route-cJvYPjnn.js:1:3250923)
+    at async Q (file:///workspace/sites/malomo-screening-v1/malomo-engine-screening/dist/server/_next/static/app-route-handler-dispatch-B_OEuLk5.js:1:18260)
+    at async ot (file:///workspace/sites/malomo-screening-v1/malomo-engine-screening/dist/server/_next/static/app-route-handler-dispatch-B_OEuLk5.js:1:18546)
+    at async So.route (file:///workspace/sites/malomo-screening-v1/malomo-engine-screening/dist/server/index.js:2:26374)
+    at async t (file:///workspace/sites/malomo-screening-v1/malomo-engine-screening/dist/server/index.js:2:26583)
+    at async bm (file:///workspace/sites/malomo-screening-v1/malomo-engine-screening/dist/server/index.js:14:138589)
+PASS 10 server kill switch prevents new positions
+PASS 11 paper plan waits for next open
+PASS 12 duplicate plan rejected
+PASS 13 next-open fill and active state
+PASS 14 replaying older data never rewinds a position
+PASS 15 manual paper close records net P&L
+PASS 16 later scan does not reopen terminal position
+PASS 17 second pair paper plan created
+PASS 18 waiting plan can be cancelled
+PASS 19 stale historical payload cannot masquerade as live
+PASS 20 data errors audited
+PASS 21 96-candle tracking reconciles in order
+workspace_post e [ZodError]
+    at get error (file:///workspace/sites/malomo-screening-v1/malomo-engine-screening/dist/server/_next/static/route-cJvYPjnn.js:1:3197627)
+    at e.parse (file:///workspace/sites/malomo-screening-v1/malomo-engine-screening/dist/server/_next/static/route-cJvYPjnn.js:1:3198829)
+    at Object.kt [as handlerFn] (file:///workspace/sites/malomo-screening-v1/malomo-engine-screening/dist/server/_next/static/route-cJvYPjnn.js:1:3248738)
+    at async Q (file:///workspace/sites/malomo-screening-v1/malomo-engine-screening/dist/server/_next/static/app-route-handler-dispatch-B_OEuLk5.js:1:18260)
+    at async ot (file:///workspace/sites/malomo-screening-v1/malomo-engine-screening/dist/server/_next/static/app-route-handler-dispatch-B_OEuLk5.js:1:18546)
+    at async So.route (file:///workspace/sites/malomo-screening-v1/malomo-engine-screening/dist/server/index.js:2:26374)
+    at async t (file:///workspace/sites/malomo-screening-v1/malomo-engine-screening/dist/server/index.js:2:26583)
+    at async bm (file:///workspace/sites/malomo-screening-v1/malomo-engine-screening/dist/server/index.js:14:138589) {
+  issues: [
+    {
+      code: 'too_big',
+      maximum: 96,
+      type: 'number',
+      inclusive: true,
+      exact: false,
+      message: 'Number must be less than or equal to 96',
+      path: []
+    }
+  ],
+  addIssue: [Function (anonymous)],
+  addIssues: [Function (anonymous)],
+  errors: [
+    {
+      code: 'too_big',
+      maximum: 96,
+      type: 'number',
+      inclusive: true,
+      exact: false,
+      message: 'Number must be less than or equal to 96',
+      path: []
+    }
+  ]
+}
+PASS 22 out-of-range replay rejected
+{"passed":22,"failed":0}

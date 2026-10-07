@@ -101,3 +101,15 @@ When sources conflict, use this order:
 5. Cryptoday public pages — architecture/process inspiration only.
 
 Do not promote any external parameter into a final Malomo rule unless it is explicitly documented as locked in the canonical project files.
+
+
+## 6. Research implementation and UI references — 2026-10-07
+
+- `malomo-engine-screening/docs/PRD.md`: operational research hypothesis, software contracts and explicit unvalidated parameters.
+- `malomo-engine-screening/research/RESULTS.json`: actual six-pair research outcome, **NOT_VALIDATED**.
+- `malomo-engine-screening/research/DATA_MANIFEST.json`: official Binance public archive URLs and SHA-256 provenance (https://data.binance.vision/).
+- https://github.com/satnaing/shadcn-admin: UI navigation and dashboard density inspiration; no trading logic adopted and no claim of an objectively “best” UI.
+- https://github.com/shadcn-ui/ui: accessible interface primitives used by the React application; preserve dependency/vendor licenses.
+- Charts are custom SVG OHLC rendering, not TradingView or Cryptoday components.
+
+The exact ATR×3 stop is **not adopted**; this does not reject researching an ATR-based risk hypothesis later. Hidden Cryptoday formulas remain excluded. Direction/Setup/Trigger remain mandatory, while Momentum/Participation/Volatility/Location remain descriptive evidence rather than unanimous votes. The negative candidate results do not change those source-attribution boundaries or establish predictive validity.

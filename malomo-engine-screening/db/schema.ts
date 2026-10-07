@@ -1,0 +1,5 @@
+import {sqliteTable,text,integer,real,index} from 'drizzle-orm/sqlite-core';
+export const settings=sqliteTable('settings',{id:text('id').primaryKey(),payload:text('payload').notNull()});
+export const watchlist=sqliteTable('watchlist',{symbol:text('symbol').primaryKey(),createdAt:integer('created_at').notNull()});
+export const journal=sqliteTable('journal',{id:text('id').primaryKey(),symbol:text('symbol').notNull(),asOf:integer('as_of').notNull(),mode:text('mode').notNull(),decision:text('decision').notNull(),payload:text('payload').notNull(),note:text('note').notNull().default(''),createdAt:integer('created_at').notNull()},t=>[index('journal_created').on(t.createdAt),index('journal_symbol_time').on(t.symbol,t.asOf)]);
+export const positions=sqliteTable('positions',{id:text('id').primaryKey(),symbol:text('symbol').notNull(),mode:text('mode').notNull(),state:text('state').notNull(),riskAmount:real('risk_amount').notNull(),payload:text('payload').notNull(),updatedAt:integer('updated_at').notNull()},t=>[index('positions_state').on(t.state)]);

@@ -1,0 +1,14 @@
+[
+  {
+    "path": "core/market.ts",
+    "sha256": "48d8de2345e2f0ffaa1cb7521c6f9548767ff5d20a1b8597a396c82a4e757568"
+  },
+  {
+    "path": "core/engine.ts",
+    "sha256": "5eaffe9111f24107641d9609a9ef97eefe743c3dc487f33351b87c7d5cb26235"
+  },
+  {
+    "path": "core/backtest.ts",
+    "sha256": "4e8bbb225385f100254adcdb03f818acd5dc7dcbe26d6db0cc78e2fad15d5697"
+  }
+]

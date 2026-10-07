@@ -1,0 +1,121 @@
+BTCUSDT {
+  trades: 12,
+  winRate: 25,
+  profitFactor: 0.6346247843241065,
+  meanR: -0.28176790802914536,
+  totalR: -3.3812148963497446,
+  maxDrawdownR: 4.337975851451622
+}
+ETHUSDT {
+  trades: 12,
+  winRate: 41.666666666666664,
+  profitFactor: 1.3904059902889687,
+  meanR: 0.23276018805616916,
+  totalR: 2.79312225667403,
+  maxDrawdownR: 3.0726739563299947
+}
+SOLUSDT {
+  trades: 14,
+  winRate: 42.857142857142854,
+  profitFactor: 1.4657751798846845,
+  meanR: 0.27046289981993693,
+  totalR: 3.786480597479117,
+  maxDrawdownR: 4.08066283462234
+}
+BNBUSDT {
+  trades: 14,
+  winRate: 21.428571428571427,
+  profitFactor: 0.5303049762751305,
+  meanR: -0.3763698005551951,
+  totalR: -5.2691772077727315,
+  maxDrawdownR: 9.230780977980121
+}
+XRPUSDT {
+  trades: 10,
+  winRate: 20,
+  profitFactor: 0.4864443809523614,
+  meanR: -0.418995598528184,
+  totalR: -4.18995598528184,
+  maxDrawdownR: 5.141770903837386
+}
+DOGEUSDT {
+  trades: 9,
+  winRate: 44.44444444444444,
+  profitFactor: 1.5552477122313206,
+  meanR: 0.3159612568483601,
+  totalR: 2.8436513116352407,
+  maxDrawdownR: 3.0461852217363203
+}
+{
+  "verdict": "NOT_VALIDATED",
+  "periods": [
+    {
+      "period": "DEVELOPMENT",
+      "trades": 20,
+      "winRate": 30,
+      "profitFactor": 0.8272544656259614,
+      "meanR": -0.1237603589286564,
+      "totalR": -2.475207178573128,
+      "maxDrawdownR": 5.281422571008084,
+      "bootstrap": {
+        "meanR95": [
+          -0.5766115421325584,
+          0.33013613280561094
+        ],
+        "runs": 1000,
+        "blockSize": 5
+      }
+    },
+    {
+      "period": "OOS",
+      "trades": 21,
+      "winRate": 33.333333333333336,
+      "profitFactor": 0.976137539779276,
+      "meanR": -0.01621151984527236,
+      "totalR": -0.34044191675071955,
+      "maxDrawdownR": 8.225398096477017,
+      "bootstrap": {
+        "meanR95": [
+          -0.5957074326009015,
+          0.5609989586367637
+        ],
+        "runs": 1000,
+        "blockSize": 5
+      }
+    },
+    {
+      "period": "HOLDOUT",
+      "trades": 30,
+      "winRate": 33.333333333333336,
+      "profitFactor": 0.9705763468531169,
+      "meanR": -0.02004816094306935,
+      "totalR": -0.6014448282920806,
+      "maxDrawdownR": 12.228214177284137,
+      "bootstrap": {
+        "meanR95": [
+          -0.6200991235035123,
+          0.5773652018233744
+        ],
+        "runs": 1000,
+        "blockSize": 5
+      }
+    }
+  ],
+  "overall": {
+    "trades": 71,
+    "winRate": 32.394366197183096,
+    "profitFactor": 0.9303150619269429,
+    "meanR": -0.04812808343121022,
+    "totalR": -3.417093923615926,
+    "maxDrawdownR": 12.90494147115525
+  },
+  "doubleCost": {
+    "trades": 71,
+    "winRate": 32.394366197183096,
+    "profitFactor": 0.9034565568468275,
+    "meanR": -0.06808715277791354,
+    "totalR": -4.834187847231862,
+    "maxDrawdownR": 13.809882942310505
+  },
+  "open": 2
+}
