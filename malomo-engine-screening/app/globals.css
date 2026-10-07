@@ -135,3 +135,5 @@ body{font-size:16px}.panel [data-slot="table-cell"]{font-size:14px}.panel [data-
 .install-app-dialog{max-height:calc(100dvh - 2rem);overflow:auto}
 .install-steps{font-size:16px;line-height:1.65}.install-steps strong{color:#d3edbc}.install-steps p{margin-top:6px;color:#b4bfc7}.install-note{font-size:14px;line-height:1.6;color:#98a7b1}
 @media(display-mode:standalone){.topbar{height:calc(66px + env(safe-area-inset-top));padding-top:env(safe-area-inset-top)}.content-wrap{padding-bottom:max(24px,env(safe-area-inset-bottom))}body{padding-left:env(safe-area-inset-left);padding-right:env(safe-area-inset-right)}}
+
+.pending-trigger{border:1px solid #425243;border-radius:8px;background:#202b24;padding:16px}.pending-trigger h3{color:#d6eec7;margin-bottom:9px;font-size:16px}.pending-trigger p{margin-top:12px;color:#bbc9b9;font-size:14px;line-height:1.6}.pending-trigger .detail-numbers>div{font-size:14px}.pending-trigger .detail-numbers strong{text-align:right;white-space:nowrap}
